@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magic Forest Adventure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Enter the magic Forest</h1>
+    <p>Discover the secrets hidden within the trees...</p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <h2>Forest Creatures</h2>
+    <div class="grid-gallery">
+      <div class="grid-item" style="background-image: url(assets/creature1.jpg);"></div>
+      <div class="grid-item" style="background-image: url(assets/creature2.jpg);"></div>
+      <div class="grid-item" style="background-image: url(assets/creature3.jpg);"></div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="testimonial">
+    <h2>Whisper the Forest</h2>
+    <p>"Magic of the forest is unmatched"</p>
+    <p>"A journey unlike any other"</p>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact">
+    <h2>Get in touch with forest</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Enter Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <input type="button" value="Submit">
+    </form>
+  </section>
+
+  <script>
+    document.addEventListener('mousemove', (e) => {
+      const orb = document.createElement('div');
+      orb.classList.add('orb');
+      orb.style.left = e.pageX + 'px';
+      orb.style.top = e.pageY + 'px';
+      document.body.appendChild(orb);
+
+      setTimeout(() => {
+        orb.remove();
+      },1000);
+    });
+  </script>
+
+</body>
+</html>
